@@ -81,7 +81,7 @@ For additional information on VPython, refer to the [official VPython documentat
 Once you have installed the dependencies and set up the project, you can run the simulation with the following command:
 
 ```bash
-python main.py
+python sphericalgame.py
 ```
 
 This will open the VPython 3D viewer where you can interact with the simulation.
@@ -91,10 +91,8 @@ This will open the VPython 3D viewer where you can interact with the simulation.
 ## Usage
 
 ### Controls
-
-- **Movement**: Use `W`, `A`, `S`, `D` keys to move forward, left, backward, and right, respectively.
 - **Camera Rotation**: Use the arrow keys to rotate the camera left, right, up, or down.
-- **Move Up/Down**: Use `Q` to move up and `E` to move down.
+- **Move in/out**: zoom in and out using mouse or touchpad.
 
 ### Simulation Features
 
@@ -123,4 +121,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-This README provides all necessary information to get started, run, and interact with the 3D molecular dynamics simulation project. Please let me know if there are specific areas you'd like to expand upon.
