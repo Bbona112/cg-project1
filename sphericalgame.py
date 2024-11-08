@@ -98,7 +98,7 @@ scene.bind('keydown', lambda evt: move_forward() if evt.key == 'w' else
                             rotate_right() if evt.key == 'right' else
                             rotate_up() if evt.key == 'up' else
                             rotate_down() if evt.key == 'down' else None)
-
+       
 # Animation loop with molecular dynamics
 while True:
     rate(120)
@@ -140,3 +140,9 @@ while True:
         if mag(particle.pos) > rbc_radius - particle_radius:
             particle.pos = rbc_radius * norm(particle.pos)
             particle.velocity *= -0.5
+
+
+
+
+
+
