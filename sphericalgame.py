@@ -21,6 +21,7 @@ spring_constant = 0.1  # Strength of attraction to core
 single_bond_distance = 1.5
 double_bond_distance = 1.0
 triple_bond_distance = 0.5
+nucleus_particle_count = 10  # Number of particles within each nucleus
 
 # Red blood cell (RBC) enclosure
 rbc = sphere(pos=vector(0, 0, 0), radius=rbc_radius, color=color.red, opacity=0.3)
