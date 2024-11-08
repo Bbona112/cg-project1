@@ -91,8 +91,9 @@ This will open the VPython 3D viewer where you can interact with the simulation.
 ## Usage
 
 ### Controls
+- **Movement**: Use W, A, S, D keys to move forward, left, backward, and right, respectively.
 - **Camera Rotation**: Use the arrow keys to rotate the camera left, right, up, or down.
-- **Move in/out**: zoom in and out using mouse or touchpad.
+- **Move Up/Down**: Use Q to move up and E to move down
 
 ### Simulation Features
 
