@@ -49,6 +49,19 @@ for i in range(num_particles):
     particle.velocity = vector(random() - 0.25, random() - 0.25, random() - 0.25)
     particles.append(particle)
 
+# Generate nucleus particles within each core
+nucleus_particles = []
+for core, nucleus in cores:
+    for _ in range(nucleus_particle_count):
+        theta = random() * 2 * pi
+        phi = random() * pi
+        x = nucleus.pos.x + nucleus_radius * sin(phi) * cos(theta)
+        y = nucleus.pos.y + nucleus_radius * sin(phi) * sin(theta)
+        z = nucleus.pos.z + nucleus_radius * cos(phi)
+        nucleus_particle = sphere(pos=vector(x, y, z), radius=0.1, color=color.cyan, emissive=True)  # Glowing effect
+        nucleus_particle.velocity = vector(random() - 0.5, random() - 0.5, random() - 0.5)
+        nucleus_particles.append((nucleus_particle, nucleus))
+
 # List to store bonds
 bonds = []
 
