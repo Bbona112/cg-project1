@@ -11,6 +11,7 @@ Running the Project
 Usage
 Contributing
 License
+
 Project Overview
 The purpose of this project is to model and visualize molecular dynamics inside an RBC, simulating complex particle interactions, bonding, and movement. Each core structure inside the RBC contains smaller particles representing nucleus-like entities. These particles dynamically interact with each other, forming visualized bonds based on proximity. Additionally, users can navigate the environment using free camera movement for a 3D exploration.
 
