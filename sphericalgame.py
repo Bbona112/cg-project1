@@ -56,36 +56,7 @@ camera_speed = 0.5
 camera_rotation_speed = 0.02
 scene.forward = vector(0, 0, -1)  # Initial direction camera faces
 
-# Functions for camera controls
-def move_forward():
-    scene.camera.pos += scene.forward * camera_speed
 
-def move_backward():
-    scene.camera.pos -= scene.forward * camera_speed
-
-def move_left():
-    scene.camera.pos -= norm(scene.forward.cross(vector(0, 1, 0))) * camera_speed
-
-def move_right():
-    scene.camera.pos += norm(scene.forward.cross(vector(0, 1, 0))) * camera_speed
-
-def move_up():
-    scene.camera.pos += vector(0, 1, 0) * camera_speed
-
-def move_down():
-    scene.camera.pos -= vector(0, 1, 0) * camera_speed
-
-def rotate_left():
-    scene.forward = scene.forward.rotate(angle=camera_rotation_speed, axis=vector(0, 1, 0))
-
-def rotate_right():
-    scene.forward = scene.forward.rotate(angle=-camera_rotation_speed, axis=vector(0, 1, 0))
-
-def rotate_up():
-    scene.forward = scene.forward.rotate(angle=camera_rotation_speed, axis=scene.forward.cross(vector(0, 1, 0)))
-
-def rotate_down():
-    scene.forward = scene.forward.rotate(angle=-camera_rotation_speed, axis=scene.forward.cross(vector(0, 1, 0)))
 
 # Bind keys to movement functions
 scene.bind('keydown', lambda evt: move_forward() if evt.key == 'w' else
