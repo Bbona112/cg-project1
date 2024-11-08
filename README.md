@@ -38,7 +38,7 @@ To run this project, ensure you have the necessary dependencies installed and a 
 ### Prerequisites
 
 - Python 3.x
-- Basic understanding of molecular dynamics and 3D simulation visualization
+- Basic understanding of molecular dynamics and 3D simulation visualization.
 
 ---
 
