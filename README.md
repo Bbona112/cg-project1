@@ -63,13 +63,13 @@ For additional information on VPython, refer to the [official VPython documentat
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/3d-molecular-simulation.git
+    git clone https://github.com/yourusername/cg-project1.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd 3d-molecular-simulation
+    cd cg-project1
     ```
 
 3. Ensure dependencies are installed by following the instructions in the [Dependencies](#dependencies) section.
@@ -115,9 +115,5 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
