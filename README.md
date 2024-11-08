@@ -63,7 +63,7 @@ For additional information on VPython, refer to the [official VPython documentat
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/cg-project1.git
+    https://github.com/Bbona112/cg-project1.git 
     ```
 
 2. Navigate to the project directory:
