@@ -33,7 +33,20 @@ for i in range(num_cores):
     nucleus = sphere(pos=core_pos, radius=nucleus_radius, color=color.black, opacity=1)
     cores.append((core, nucleus))
 
-
+# Generate particles with random colors around the cores
+particles = []
+for i in range(num_particles):
+    core_index = int(random() * num_cores)
+    core, _ = cores[core_index]
+    theta = random() * 2 * pi
+    phi = random() * pi
+    x = core.pos.x + orbit_radius * sin(phi) * cos(theta)
+    y = core.pos.y + orbit_radius * sin(phi) * sin(theta)
+    z = core.pos.z + orbit_radius * cos(phi)
+    particle_color = color.red if random() < 0.33 else (color.green if random() < 0.5 else color.blue)
+    particle = sphere(pos=vector(x, y, z), radius=particle_radius, color=particle_color)
+    particle.velocity = vector(random() - 0.25, random() - 0.25, random() - 0.25)
+    particles.append(particle)
 
 # List to store bonds
 bonds = []
