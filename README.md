@@ -84,7 +84,7 @@ Once you have installed the dependencies and set up the project, you can run the
 python sphericalgame.py
 ```
 
-This will open the VPython 3D viewer where you can interact with the simulation.
+This will open the VPython 3D viewer where you can interact with the simulation
 
 ---
 
